@@ -300,6 +300,10 @@ This approach keeps the numerical calculations inside Python and uses the langua
 ```text
 GridLens-DE/
 │
+├── docs/
+│   └── GridLens_Architecture.pdf
+│             
+│
 ├── data/
 │   ├── raw/
 │   │   └── smard_1year_raw.parquet
