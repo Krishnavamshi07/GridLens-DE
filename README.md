@@ -1,4 +1,4 @@
-````markdown id="2k8n4m"
+
 # GridLens DE
 
 GridLens DE is a data science project that explores the German electricity market using real hourly electricity-market data.
