@@ -1,7 +1,3 @@
-Yeah, I agree. For GitHub, the README should be **detailed enough to show the project properly**, but still sound like a student wrote it — not like marketing copy.
-
-Use this version:
-
 ````markdown id="2k8n4m"
 # GridLens DE
 
@@ -28,6 +24,8 @@ Instead of only showing charts, I wanted to use the data to answer questions suc
 - Are solar and wind generation related to each other?
 
 The dashboard combines these analyses in one place.
+
+
 
 ## Data Source
 
@@ -58,6 +56,7 @@ The processed dataset currently contains:
 ## Data Pipeline
 
 The project starts with data downloaded from the SMARD API.
+<img width="1254" height="1254" alt="5ae94583-6ca3-4572-b26b-9308e663c5d5" src="https://github.com/user-attachments/assets/1c735b84-cc50-4d52-9c11-99c17e42468d" />
 
 The basic pipeline is:
 
@@ -262,6 +261,11 @@ The dashboard currently includes:
 * Electricity price heatmap
 * Data explorer
 
+<img width="2184" height="1900" alt="image" src="https://github.com/user-attachments/assets/0691bff5-fcb0-46ff-bec7-925757371a0e" />
+<img width="2155" height="1785" alt="image" src="https://github.com/user-attachments/assets/be56d694-5704-41c3-9c30-6e2b63a90ee3" />
+
+
+
 There is also a date-range filter so users can explore a specific period instead of always looking at the complete dataset.
 
 ## AI Chatbot
@@ -287,6 +291,7 @@ Is renewable generation related to electricity prices?
 
 How do solar and wind compare?
 ```
+<img width="2193" height="1884" alt="image" src="https://github.com/user-attachments/assets/e8051fd5-35c9-4d05-8321-f7d806f6c2d1" />
 
 This approach keeps the numerical calculations inside Python and uses the language model mainly for explaining the results in natural language.
 
@@ -296,8 +301,23 @@ This approach keeps the numerical calculations inside Python and uses the langua
 GridLens-DE/
 │
 ├── data/
+│   ├── raw/
+│   │   ├── smard_1year_raw.parquet
+│   │   └── ...
+│   │
 │   └── processed/
-│       └── final_analytics_data.parquet
+│       ├── smard_1year_clean.parquet
+│       ├── smard_1year_enriched.parquet
+│       ├── final_analytics_data.parquet
+│       ├── daily_analytics.parquet
+│       ├── seasonal_energy_analysis.parquet
+│       ├── seasonal_generation_mix.parquet
+│       ├── seasonal_price_analysis.parquet
+│       ├── peak_demand_analysis.parquet
+│       ├── peak_renewable_analysis.parquet
+│       ├── price_quartile_analysis.parquet
+│       ├── renewable_price_capture.parquet
+│       └── ...
 │
 ├── src/
 │   ├── __init__.py
@@ -475,7 +495,4 @@ Krishnavamshi
 
 This project was built as part of my data science portfolio to practice working with real-world data and building a complete data application.
 
-```
 
-This one is long enough to make the GitHub project feel **complete**, while still sounding like a student explaining what they actually built rather than a corporate-generated README.
-```
