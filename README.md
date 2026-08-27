@@ -302,8 +302,7 @@ GridLens-DE/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── smard_1year_raw.parquet
-│   │   └── ...
+│   │   └── smard_1year_raw.parquet
 │   │
 │   └── processed/
 │       ├── smard_1year_clean.parquet
@@ -316,8 +315,12 @@ GridLens-DE/
 │       ├── peak_demand_analysis.parquet
 │       ├── peak_renewable_analysis.parquet
 │       ├── price_quartile_analysis.parquet
-│       ├── renewable_price_capture.parquet
-│       └── ...
+│       └── renewable_price_capture.parquet
+│
+├── notebooks/
+│   ├── 01_SMARD_Data_Pipeline.ipynb
+│   ├── 02_Energy_Analytics.ipynb
+│   └── 03_Visual_Analytics.ipynb
 │
 ├── src/
 │   ├── __init__.py
@@ -328,7 +331,8 @@ GridLens-DE/
 │
 ├── app.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ### `app.py`
